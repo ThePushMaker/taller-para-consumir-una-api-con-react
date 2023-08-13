@@ -1,10 +1,9 @@
-import { ProductCard } from '../ProductCard/ProductCard';
 import { useEffect, useState } from 'react';
+import { ProductCard } from '../ProductCard/ProductCard';
 import axios from 'axios';
 
 
 export const Products = () => {
-  
   // setProducts es la funcion que vamos a utilizar para poder cambiar el valor de nuestros productos
   const [products, setProducts] = useState([]);
   
