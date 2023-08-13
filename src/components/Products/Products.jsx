@@ -19,8 +19,9 @@ export const Products = () => {
       <h1>Lista de productos</h1>
       {products && products.map((product)=>{
         return(
-          <ProductCard 
+          <ProductCard  
             key={product.id}
+            id={product.id}
             title={product.title}
             image={product.image}
             price={product.price}
@@ -29,4 +30,4 @@ export const Products = () => {
       })}
     </div>
   );
-}
+} 
